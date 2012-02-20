@@ -1,0 +1,2 @@
+module FunGroupsHelper
+end

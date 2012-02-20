@@ -1,4 +1,12 @@
 ChemFinder::Application.routes.draw do
+  get "home/index"
+
+  get "hom/idex"
+
+  resources :chemicals
+
+  resources :fun_groups
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +56,7 @@ ChemFinder::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => "home#index"
 
   # See how all your routes lay out with "rake routes"
 

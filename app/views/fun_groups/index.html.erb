@@ -1,0 +1,23 @@
+<h1>Listing fun_groups</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fun_groups.each do |fun_group| %>
+  <tr>
+    <td><%= fun_group.name %></td>
+    <td><%= link_to 'Show', fun_group %></td>
+    <td><%= link_to 'Edit', edit_fun_group_path(fun_group) %></td>
+    <td><%= link_to 'Destroy', fun_group, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fun group', new_fun_group_path %>
