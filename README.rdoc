@@ -17,3 +17,7 @@ I used scaffolds to set up the preliminary models: chemicals and functional grou
 Finally none of this is meant to be overly helpful or useful to anyone but me- this is a learning process, after all.
 
 Test number one: uploading this to the git repository correctly as the second incarnation... the instructions to load the original copy were straightforward, but adding a second version properly will be an exercise in... actually it'll probably be quicker to figure out than typing this paragraph was.
+
+
+Okay so the current version... which theoretically I can switch between using git and some such is configured to use PostgreSQL, which I had to install (that was a was coup!), and now I've pushed it to Heroku, but initially I got the standard Rails start page.  Better than nothing, because at least I have a functioning rails app on my heroku page.... but still not the ideal landing of getting the ChemFinder basic page up.  But hopefully this version has the appropriate docs, and I just need to arrange them.  I'll be making changes until I figure this out actually.  And then probably deleting this section.
+
