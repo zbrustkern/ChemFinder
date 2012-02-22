@@ -1,0 +1,11 @@
+<h1>Search for a chemical</h1>
+
+<%= form_tag("/search", :method => "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search by name") %>
+<% end %>
+
+
+
+<%= link_to 'Back', chemicals_path %>

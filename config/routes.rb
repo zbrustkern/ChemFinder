@@ -1,8 +1,6 @@
 ChemFinder::Application.routes.draw do
   get "home/index"
 
-  get "hom/idex"
-
   resources :chemicals
 
   resources :fun_groups

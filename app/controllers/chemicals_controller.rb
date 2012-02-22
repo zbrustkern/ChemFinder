@@ -2,10 +2,19 @@ class ChemicalsController < ApplicationController
   # GET /chemicals
   # GET /chemicals.json
   def index
-    @chemicals = Chemical.all
+    @chemicals = Chemical.search(params[:search])
 
     respond_to do |format|
       format.html # index.html.erb
+      format.json { render json: @chemicals }
+    end
+  end
+  
+  def search
+    @chemicals = Chemical.search(params[:search])
+  
+    respond_to do |format|
+      format.html # search.html.erb
       format.json { render json: @chemicals }
     end
   end
@@ -80,4 +89,5 @@ class ChemicalsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
 end
